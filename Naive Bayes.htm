@@ -1,118 +1,968 @@
-<<<<<<< HEAD
-<html>
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
 
 <head>
 <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="Naive%20Bayes_files/filelist.xml">
+<link rel=Edit-Time-Data href="Naive%20Bayes_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>cse lab12</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>cse lab12</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>561</o:TotalTime>
+  <o:Created>2017-11-14T09:25:00Z</o:Created>
+  <o:LastSaved>2017-11-14T09:25:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1191</o:Words>
+  <o:Characters>6793</o:Characters>
+  <o:Lines>56</o:Lines>
+  <o:Paragraphs>15</o:Paragraphs>
+  <o:CharactersWithSpaces>7969</o:CharactersWithSpaces>
+  <o:Version>16.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=dataStoreItem href="Naive%20Bayes_files/item0001.xml"
+target="Naive%20Bayes_files/props002.xml">
+<link rel=themeData href="Naive%20Bayes_files/themedata.thmx">
+<link rel=colorSchemeMapping href="Naive%20Bayes_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-IN</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="375">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hashtag"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Unresolved Mention"/>
+ </w:LatentStyles>
+</xml><![endif]-->
 <style>
 <!--
  /* Font Definitions */
  @font-face
 	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1107305727 0 0 415 0;}
 @font-face
 	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;}
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536859905 -1073732485 9 0 511 0;}
  /* Style Definitions */
  p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0cm;
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0cm;
 	margin-right:0cm;
 	margin-bottom:8.0pt;
 	margin-left:0cm;
 	line-height:107%;
+	mso-pagination:widow-orphan;
 	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
 h3
-	{mso-style-link:"Heading 3 Char";
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 3 Char";
+	mso-margin-top-alt:auto;
 	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
 	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
 	font-size:13.5pt;
 	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
 	font-weight:bold;}
 a:link, span.MsoHyperlink
-	{color:blue;
-	text-decoration:underline;}
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
 a:visited, span.MsoHyperlinkFollowed
-	{color:#954F72;
-	text-decoration:underline;}
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:#954F72;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
 p
-	{margin-right:0cm;
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
 	margin-left:0cm;
+	mso-pagination:widow-orphan;
 	font-size:12.0pt;
-	font-family:"Times New Roman",serif;}
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
 span.Heading3Char
 	{mso-style-name:"Heading 3 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
 	mso-style-link:"Heading 3";
+	mso-ansi-font-size:13.5pt;
+	mso-bidi-font-size:13.5pt;
 	font-family:"Times New Roman",serif;
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-fareast-language:EN-IN;
 	font-weight:bold;}
 p.ql-center-displayed-equation, li.ql-center-displayed-equation, div.ql-center-displayed-equation
 	{mso-style-name:ql-center-displayed-equation;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
 	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
 	margin-left:0cm;
+	mso-pagination:widow-orphan;
 	font-size:12.0pt;
-	font-family:"Times New Roman",serif;}
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
 span.ql-right-eqno
-	{mso-style-name:ql-right-eqno;}
+	{mso-style-name:ql-right-eqno;
+	mso-style-unhide:no;}
 span.ql-left-eqno
-	{mso-style-name:ql-left-eqno;}
+	{mso-style-name:ql-left-eqno;
+	mso-style-unhide:no;}
 span.crayon-sy
-	{mso-style-name:crayon-sy;}
+	{mso-style-name:crayon-sy;
+	mso-style-unhide:no;}
 span.crayon-s
-	{mso-style-name:crayon-s;}
+	{mso-style-name:crayon-s;
+	mso-style-unhide:no;}
 span.crayon-h
-	{mso-style-name:crayon-h;}
+	{mso-style-name:crayon-h;
+	mso-style-unhide:no;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
 .MsoChpDefault
-	{font-family:"Calibri",sans-serif;}
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
 .MsoPapDefault
-	{margin-bottom:8.0pt;
+	{mso-style-type:export-only;
+	margin-bottom:8.0pt;
 	line-height:107%;}
 @page WordSection1
 	{size:595.3pt 841.9pt;
-	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
 div.WordSection1
 	{page:WordSection1;}
  /* List Definitions */
- ol
+ @list l0
+	{mso-list-id:1911385984;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1742842452 327968186 -268382302 714491832 -204858958 364417656 -1703762302 1442877898 -2003112216 -384549956;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:•;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Arial",sans-serif;
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:•;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Arial",sans-serif;
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:•;
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Arial",sans-serif;
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:•;
+	mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Arial",sans-serif;
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:•;
+	mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Arial",sans-serif;
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:•;
+	mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Arial",sans-serif;
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:•;
+	mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Arial",sans-serif;
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:•;
+	mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Arial",sans-serif;
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:•;
+	mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Arial",sans-serif;
+	mso-bidi-font-family:"Times New Roman";}
+ol
 	{margin-bottom:0cm;}
 ul
 	{margin-bottom:0cm;}
 -->
 </style>
-
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:8.0pt;
+	mso-para-margin-left:0cm;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
 </head>
 
-<body lang=EN-IN link=blue vlink="#954F72">
+<body lang=EN-IN link=blue vlink="#954F72" style='tab-interval:36.0pt'>
 
 <div class=WordSection1>
 
 <p class=MsoNormal align=center style='text-align:center'><a
-name="_Hlk497473051"></a><b><span style='font-size:13.5pt;line-height:107%;
-font-family:"Arial",sans-serif;color:#2B3E51;background:white'>Machine Learning
-Using Naïve Bayes Classification</span></b></p>
+name="_Hlk497473051"></a><b style='mso-bidi-font-weight:normal'><span
+style='font-size:13.5pt;line-height:107%;font-family:"Arial",sans-serif;
+color:#2B3E51;background:white'>Machine Learning Using Naïve Bayes
+Classification<o:p></o:p></span></b></p>
 
-<p class=MsoNormal><b><span style='font-size:13.5pt;line-height:107%;
-font-family:"Arial",sans-serif;color:#2B3E51;background:white'>Abstract:</span></b></p>
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:13.5pt;line-height:107%;font-family:"Arial",sans-serif;
+color:#2B3E51;background:white'>Abstract:<o:p></o:p></span></b></p>
 
 <p class=MsoNormal><span style='font-size:13.5pt;line-height:107%;font-family:
 "Arial",sans-serif;color:#2B3E51;background:white'>It is very needful problem
 in current scenario to predict the text category of a new data from existing
 categories data. In this page we have tried to explore Bayesian probability
-approach to predict the class of new text.</span></p>
+approach to predict the class of new text.<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-size:13.5pt;line-height:107%;font-family:
 "Arial",sans-serif;color:#2B3E51;background:white'>It uses the probability that
 new text belongs to which category with a numeric score. The maximum score will
 tell which category the new query text belongs to. This process is easy and
-works to good accuracy.</span></p>
+works to good accuracy.<b style='mso-bidi-font-weight:normal'><o:p></o:p></b></span></p>
 
 <p class=MsoNormal><span style='font-size:13.5pt;line-height:107%;font-family:
-"Arial",sans-serif;color:#2B3E51;background:white'>&nbsp;</span></p>
+"Arial",sans-serif;color:#2B3E51;background:white'><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNormal><b><span style='font-size:13.5pt;line-height:107%;
-font-family:"Arial",sans-serif;color:#2B3E51;background:white'>Introduction:</span></b></p>
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:13.5pt;line-height:107%;font-family:"Arial",sans-serif;
+color:#2B3E51;background:white'>Introduction:<o:p></o:p></span></b></p>
 
 <p class=MsoNormal><span style='font-size:13.5pt;line-height:107%;font-family:
-"Arial",sans-serif;color:#2B3E51;background:white'>&nbsp;</span></p>
+"Arial",sans-serif;color:#2B3E51;background:white'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal><b><span style='font-size:13.5pt;line-height:107%;
 font-family:"Arial",sans-serif;color:#2B3E51;background:white'>Naive Bayes</span></b><span
@@ -122,249 +972,351 @@ Classifiers.</b>&nbsp;It works with the assumption that features are&nbsp;</span
 href="https://brilliant.org/wiki/statistical-independence/?wiki_title=statistically%20independent"
 target="_blank" title="page not yet created"><span style='font-size:13.5pt;
 line-height:107%;font-family:"Arial",sans-serif;color:#2B3E51;background:white;
-text-decoration:none'>statistically independent</span></a><span
+text-decoration:none;text-underline:none'>statistically independent</span></a><span
 style='font-size:13.5pt;line-height:107%;font-family:"Arial",sans-serif;
 color:#2B3E51;background:white'>&nbsp;of one another. Unlike many other
 classifiers which assume that, for a given class, there will be some&nbsp;</span><a
 href="https://brilliant.org/wiki/correlation/" target="_blank"
 title=correlation><span style='font-size:13.5pt;line-height:107%;font-family:
-"Arial",sans-serif;color:#2B3E51;background:white;text-decoration:none'>correlation</span></a><span
-style='font-size:13.5pt;line-height:107%;font-family:"Arial",sans-serif;
-color:#2B3E51;background:white'>&nbsp;between features, naive Bayes explicitly assumes
-the features as&nbsp;</span><a
+"Arial",sans-serif;color:#2B3E51;background:white;text-decoration:none;
+text-underline:none'>correlation</span></a><span style='font-size:13.5pt;
+line-height:107%;font-family:"Arial",sans-serif;color:#2B3E51;background:white'>&nbsp;between
+features, naive Bayes explicitly assumes the features as&nbsp;</span><a
 href="https://brilliant.org/wiki/conditional-independence/?wiki_title=conditionally%20independent"
 target="_blank" title="page not yet created"><span style='font-size:13.5pt;
 line-height:107%;font-family:"Arial",sans-serif;color:#2B3E51;background:white;
-text-decoration:none'>conditionally independent</span></a><span
+text-decoration:none;text-underline:none'>conditionally independent</span></a><span
 style='font-size:13.5pt;line-height:107%;font-family:"Arial",sans-serif;
 color:#2B3E51;background:white'>&nbsp;given the class. While this seems an
 overly simplistic (naive) restriction on the data, in practice naive Bayes is
 competitive with more sophisticated techniques and enjoys some theoretical
-support for its presumption.</span></p>
+support for its presumption.<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-size:13.5pt;line-height:107%;font-family:
 "Arial",sans-serif;color:#2B3E51;background:white'>Because of the independence
 assumption, naive Bayes classifiers are highly scalable and can quickly learn
 to use high dimensional features with limited training data. This is useful for
-many real world datasets where the amount of data may be small in comparison
-with the number of features for each individual piece of data, such as speech, text,
-and image data. Examples of modern applications include recommendation system, spam
-filtering, automatic medical diagnoses, medical image processing, and vocal
-emotion recognition.</span></p>
+many <span class=GramE>real world</span> datasets where the amount of data may
+be small in comparison with the number of features for each individual piece of
+data, such as speech, text, and image data. Examples of modern applications
+include recommendation system, spam filtering, automatic medical diagnoses,
+medical image processing, and vocal emotion recognition.<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-size:13.5pt;line-height:107%;font-family:
-"Arial",sans-serif;color:#2B3E51;background:white'>&nbsp;</span></p>
+"Arial",sans-serif;color:#2B3E51;background:white'><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNormal><b><span style='font-size:13.5pt;line-height:107%;
-font-family:"Arial",sans-serif;color:#2B3E51;background:white'>Example with
-Naïve Bayes</span></b></p>
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:13.5pt;line-height:107%;font-family:"Arial",sans-serif;
+color:#2B3E51;background:white'>Example with Naïve Bayes<o:p></o:p></span></b></p>
 
 <p class=MsoNormal><span style='font-size:13.5pt;line-height:107%;font-family:
 "Arial",sans-serif;color:#2B3E51;background:white'>Suppose we are building a
 classifier that checks from symptoms text whether disease is cough or
 conjunctivitis. Our training set has 255 sentences for cough and 255 for
-conjunctivitis, some examples are listed below:</span></p>
+conjunctivitis, some examples are listed below:<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-size:13.5pt;line-height:107%;font-family:
-"Arial",sans-serif;color:#2B3E51;background:white'>&nbsp;</span></p>
+"Arial",sans-serif;color:#2B3E51;background:white'><o:p>&nbsp;</o:p></span></p>
 
 <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=616
- style='width:462.0pt;background:white;border-collapse:collapse;border:none'>
- <tr style='height:11.25pt'>
-  <td width=393 style='width:294.75pt;border:solid windowtext 1.0pt;padding:
-  .75pt .75pt .75pt .75pt;height:11.25pt'>
+ style='width:462.0pt;background:white;border-collapse:collapse;border:none;
+ mso-border-alt:solid windowtext .5pt;mso-yfti-tbllook:1184;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:11.25pt'>
+  <td width=393 style='width:294.75pt;border:solid windowtext 1.0pt;mso-border-alt:
+  solid windowtext .5pt;padding:.75pt .75pt .75pt .75pt;height:11.25pt'>
   <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
   normal'><b><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-  color:#2B3E51'>Text</span></b></p>
+  mso-fareast-font-family:"Times New Roman";color:#2B3E51;mso-fareast-language:
+  EN-IN'>Text</span></b><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:#2B3E51;mso-fareast-language:
+  EN-IN'><o:p></o:p></span></p>
   </td>
   <td width=207 style='width:155.25pt;border:solid windowtext 1.0pt;border-left:
-  none;padding:.75pt .75pt .75pt .75pt;height:11.25pt'>
+  none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:.75pt .75pt .75pt .75pt;height:11.25pt'>
   <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
   normal'><b><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-  color:#2B3E51'>Disease</span></b></p>
+  mso-fareast-font-family:"Times New Roman";color:#2B3E51;mso-fareast-language:
+  EN-IN'>Disease</span></b><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:#2B3E51;mso-fareast-language:
+  EN-IN'><o:p></o:p></span></p>
   </td>
  </tr>
- <tr style='height:42.0pt'>
+ <tr style='mso-yfti-irow:1;height:42.0pt'>
   <td width=393 style='width:294.75pt;border:solid windowtext 1.0pt;border-top:
-  none;padding:.75pt .75pt .75pt .75pt;height:42.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-  color:#2B3E51'>Watery eyes and itchy nose</span></p>
-  </td>
-  <td width=207 style='width:155.25pt;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
   padding:.75pt .75pt .75pt .75pt;height:42.0pt'>
   <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-  color:#2B3E51'>Conjunctivitis</span></p>
-  </td>
- </tr>
- <tr style='height:42.0pt'>
-  <td width=393 style='width:294.75pt;border:solid windowtext 1.0pt;border-top:
-  none;padding:.75pt .75pt .75pt .75pt;height:42.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-  color:#2B3E51'>and the sneezing and coughing begin</span></p>
+  mso-fareast-font-family:"Times New Roman";color:#2B3E51;mso-fareast-language:
+  EN-IN'>Watery eyes and itchy nose<o:p></o:p></span></p>
   </td>
   <td width=207 style='width:155.25pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:.75pt .75pt .75pt .75pt;
+  height:42.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:#2B3E51;mso-fareast-language:
+  EN-IN'>Conjunctivitis<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;height:42.0pt'>
+  <td width=393 style='width:294.75pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
   padding:.75pt .75pt .75pt .75pt;height:42.0pt'>
   <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-  color:#2B3E51'>Cough</span></p>
-  </td>
- </tr>
- <tr style='height:42.0pt'>
-  <td width=393 style='width:294.75pt;border:solid windowtext 1.0pt;border-top:
-  none;padding:.75pt .75pt .75pt .75pt;height:42.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-  color:#2B3E51'>my eyes are like forever itchy what should i do</span></p>
+  mso-fareast-font-family:"Times New Roman";color:#2B3E51;mso-fareast-language:
+  EN-IN'>and the sneezing and coughing begin<o:p></o:p></span></p>
   </td>
   <td width=207 style='width:155.25pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:.75pt .75pt .75pt .75pt;
+  height:42.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:#2B3E51;mso-fareast-language:
+  EN-IN'>Cough<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;height:42.0pt'>
+  <td width=393 style='width:294.75pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
   padding:.75pt .75pt .75pt .75pt;height:42.0pt'>
   <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-  color:#2B3E51'>Conjunctivitis</span></p>
-  </td>
- </tr>
- <tr style='height:42.0pt'>
-  <td width=393 style='width:294.75pt;border:solid windowtext 1.0pt;border-top:
-  none;padding:.75pt .75pt .75pt .75pt;height:42.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-  color:#2B3E51'>When you start coughing and then you</span></p>
+  mso-fareast-font-family:"Times New Roman";color:#2B3E51;mso-fareast-language:
+  EN-IN'>my eyes are like forever itchy what should <span class=SpellE>i</span>
+  do<o:p></o:p></span></p>
   </td>
   <td width=207 style='width:155.25pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:.75pt .75pt .75pt .75pt;
+  height:42.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:#2B3E51;mso-fareast-language:
+  EN-IN'>Conjunctivitis<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;height:42.0pt'>
+  <td width=393 style='width:294.75pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
   padding:.75pt .75pt .75pt .75pt;height:42.0pt'>
   <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-  color:#2B3E51'>Cough</span></p>
-  </td>
- </tr>
- <tr style='height:42.0pt'>
-  <td width=393 style='width:294.75pt;border:solid windowtext 1.0pt;border-top:
-  none;padding:.75pt .75pt .75pt .75pt;height:42.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-  color:#2B3E51'>my eyes so watery</span></p>
+  mso-fareast-font-family:"Times New Roman";color:#2B3E51;mso-fareast-language:
+  EN-IN'>When you start coughing and then you<o:p></o:p></span></p>
   </td>
   <td width=207 style='width:155.25pt;border-top:none;border-left:none;
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:.75pt .75pt .75pt .75pt;
+  height:42.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:#2B3E51;mso-fareast-language:
+  EN-IN'>Cough<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5;mso-yfti-lastrow:yes;height:42.0pt'>
+  <td width=393 style='width:294.75pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
   padding:.75pt .75pt .75pt .75pt;height:42.0pt'>
   <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-  color:#2B3E51'>Conjunctivitis</span></p>
+  mso-fareast-font-family:"Times New Roman";color:#2B3E51;mso-fareast-language:
+  EN-IN'>my eyes so watery<o:p></o:p></span></p>
+  </td>
+  <td width=207 style='width:155.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:.75pt .75pt .75pt .75pt;
+  height:42.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:#2B3E51;mso-fareast-language:
+  EN-IN'>Conjunctivitis<o:p></o:p></span></p>
   </td>
  </tr>
 </table>
 
-<p class=MsoNormal>&nbsp;</p>
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
 0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
 color:#2B3E51'>Now, which category does the symptom&nbsp;“<i>I have red eyes
-and nose”</i>&nbsp;belong to?</span></p>
+and nose”</i>&nbsp;belong to?<o:p></o:p></span></p>
 
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
 0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
 color:#2B3E51'>Since Naive Bayes is a probabilistic classifier, we want to
 calculate the probability that the symptom&nbsp;“<i>I have red eyes and nose”</i>
 is Cough, and the probability that it’s&nbsp;<em><span style='font-family:"Arial",sans-serif'>Conjunctivitis</span></em>.
-Then, we take the largest one. Written mathematically, what we want
-is&nbsp;P(Cough | I have red eyes and nose ) — the probability that the
-category of a disease symptom is&nbsp;Cough&nbsp;given that the sentence is “I
-have red eyes and nose”.</span></p>
+Then, we take the largest one. Written mathematically, what we want is&nbsp;<span
+class=GramE>P(</span>Cough | <span style='mso-bidi-font-style:italic'>I have
+red eyes and nose</span> ) — the probability that the category of a disease
+symptom is&nbsp;Cough&nbsp;given that the sentence is “<span style='mso-bidi-font-style:
+italic'>I have red eyes and nose</span>”.<o:p></o:p></span></p>
 
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
 0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
 color:#2B3E51'>To get the probability we need to convert text to numeric
 values. For this we can use word frequencies and count of distinct words and
-total words and use them to compute probabilities.</span></p>
+total words and use them to compute probabilities.<o:p></o:p></span></p>
 
-<p class=MsoNormal style='line-height:normal;background:white'><b><span
-style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>Bayes’
-Theorem</span></b></p>
-
-<p class=MsoNormal style='margin-bottom:15.0pt;line-height:normal;background:
-white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>Now
-we need to transform the probability we want to calculate into something that
-can be calculated using word frequencies. </span></p>
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:3;background:white'><b><span
+style='font-size:13.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+"Times New Roman";color:#2B3E51;mso-fareast-language:EN-IN'>Bayes’ Theorem<o:p></o:p></span></b></p>
 
 <p class=MsoNormal style='margin-bottom:15.0pt;line-height:normal;background:
-white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>Bayes’
-Theorem is useful when working with conditional probabilities (like we are
-doing here), because it provides us with a way to reverse them:</span></p>
+white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+"Times New Roman";color:#2B3E51;mso-fareast-language:EN-IN'>Now we need to
+transform the probability we want to calculate into something that can be
+calculated using word frequencies. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:15.0pt;line-height:normal;background:
+white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+"Times New Roman";color:#2B3E51;mso-fareast-language:EN-IN'>Bayes’ Theorem is
+useful when working with conditional probabilities (like we are doing here),
+because it provides us with a way to reverse them:<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:15.0pt;line-height:33.0pt;background:
-white'><span style='font-size:15.0pt;font-family:"Arial",sans-serif;color:#2B3E51'>&nbsp;&nbsp;</span>
-<img border=0 width=269 height=70 id="Picture 1"
-src="image001.png"></p>
+white'><span style='font-size:15.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+"Times New Roman";color:#2B3E51;mso-fareast-language:EN-IN'>&nbsp;&nbsp;</span>
+<span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Picture_x0020_1" o:spid="_x0000_i1027" type="#_x0000_t75"
+ style='width:201.75pt;height:52.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Naive%20Bayes_files/image001.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=269 height=70
+src="Naive%20Bayes_files/image001.png" v:shapes="Picture_x0020_1"><![endif]></span><span
+style='font-size:13.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+"Times New Roman";color:#2B3E51;mso-fareast-language:EN-IN'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:15.0pt;line-height:normal;background:
-white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>In
-our case, we have&nbsp;</span><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>P(Cough | I have red eyes and nose )</span><span
-style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>, so
-using this theorem we can reverse the conditional probability:</span></p>
+white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+"Times New Roman";color:#2B3E51;mso-fareast-language:EN-IN'>In our case, we
+have&nbsp;</span><span class=GramE><span style='font-size:13.5pt;font-family:
+"Arial",sans-serif;color:#2B3E51'>P(</span></span><span style='font-size:13.5pt;
+font-family:"Arial",sans-serif;color:#2B3E51'>Cough | <span style='mso-bidi-font-style:
+italic'>I have red eyes and nose</span> )</span><span style='font-size:13.5pt;
+font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";
+color:#2B3E51;mso-fareast-language:EN-IN'>, so using this theorem we can
+reverse the conditional probability:<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:15.0pt;line-height:normal;background:
-white'><span style='font-size:15.0pt;font-family:"Arial",sans-serif;color:#2B3E51'>&nbsp;&nbsp;</span><span
-style='font-size:10.0pt;font-family:"Arial",sans-serif;color:#0070C0'>P(Cough |
-I have red eyes and nose ) = P(I have red eyes and nose | Cough ) * P(Cough)/
-P(I have red eyes and nose )</span></p>
+white'><span style='font-size:15.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+"Times New Roman";color:#2B3E51;mso-fareast-language:EN-IN'>&nbsp;&nbsp;</span><span
+class=GramE><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:#0070C0'>P(</span></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:#0070C0'>Cough | <span style='mso-bidi-font-style:italic'>I have red eyes
+and nose</span> ) = P(<span style='mso-bidi-font-style:italic'>I have red eyes
+and nose | Cough</span> ) * P(Cough)/ P(I<span style='mso-bidi-font-style:italic'>
+have red eyes and nose</span> )</span><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#2B3E51;
+mso-fareast-language:EN-IN'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:15.0pt;line-height:normal;background:
-white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>Since
-for our classifier we’re just trying to find out which category has a bigger
+white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+"Times New Roman";color:#2B3E51;mso-fareast-language:EN-IN'>Since for our
+classifier we’re just trying to find out which category has a bigger
 probability, we can discard the divisor&nbsp;—which is the same for both diseases
-- and just compare</span></p>
+- and just compare<o:p></o:p></span></p>
 
 <p class=MsoNormal align=center style='margin-bottom:15.0pt;text-align:center;
-line-height:normal;background:white'><span style='font-size:10.0pt;font-family:
-"Arial",sans-serif;color:#0070C0'>P(I have red eyes and nose | Cough ) *
-P(Cough)</span></p>
+line-height:normal;background:white'><span class=GramE><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:#0070C0'>P(</span></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif;color:#0070C0;
+mso-bidi-font-style:italic'>I have red eyes and nose | Cough</span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif;color:#0070C0'> ) *
+P(Cough)</span><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman";color:#2B3E51;mso-fareast-language:
+EN-IN'><o:p></o:p></span></p>
 
 <p class=MsoNormal align=center style='margin-bottom:15.0pt;text-align:center;
 line-height:normal;background:white'><span style='font-size:13.5pt;font-family:
-"Arial",sans-serif;color:#2B3E51'>with</span></p>
+"Arial",sans-serif;mso-fareast-font-family:"Times New Roman";color:#2B3E51;
+mso-fareast-language:EN-IN'>with<o:p></o:p></span></p>
 
 <p class=MsoNormal align=center style='margin-bottom:15.0pt;text-align:center;
-line-height:normal;background:white'><span style='font-size:10.0pt;font-family:
-"Arial",sans-serif;color:#0070C0'>P(I have red eyes and nose | Conjunctivitis )
-* P(Conjunctivitis)</span></p>
+line-height:normal;background:white'><span class=GramE><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:#0070C0'>P(</span></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif;color:#0070C0;
+mso-bidi-font-style:italic'>I have red eyes and nose | Conjunctivitis</span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif;color:#0070C0'> ) * P(<span
+style='mso-bidi-font-style:italic'>Conjunctivitis</span>)</span><span
+style='font-size:13.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+"Times New Roman";color:#2B3E51;mso-fareast-language:EN-IN'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:15.0pt;line-height:normal;background:
-white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>This
-is better, since we could actually calculate these probabilities.</span></p>
+white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+"Times New Roman";color:#2B3E51;mso-fareast-language:EN-IN'>This is better,
+since we could actually calculate these probabilities.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:15.0pt;line-height:normal;background:
-white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>There’s
-a problem though: “</span><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>I have red eyes and nose</span><span style='font-size:13.5pt;
-font-family:"Arial",sans-serif;color:#2B3E51'>” doesn’t appear in our training
-set, so this probability is zero. Unless every sentence that we want to
-classify appears in our training set, the model won’t be very useful.</span></p>
+white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+"Times New Roman";color:#2B3E51;mso-fareast-language:EN-IN'>There’s a problem
+though: “</span><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
+color:#2B3E51;mso-bidi-font-style:italic'>I have red eyes and nose</span><span
+style='font-size:13.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+"Times New Roman";color:#2B3E51;mso-fareast-language:EN-IN'>” doesn’t appear in
+our training set, so this probability is zero. Unless every sentence that we
+want to classify appears in our training set, the model won’t be very useful.<o:p></o:p></span></p>
 
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
-0cm;background:white'><b><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>Naïve Bayes Theorem</span></b></p>
-
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
-0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>This can be seen from the equation of form:</span><img border=0
-width=443 height=80 id="Picture 16" src="image002.png"></p>
-
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
-0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>Or</span></p>
+0cm;background:white'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>Naïve
+Bayes Theorem<o:p></o:p></span></b></p>
 
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
 0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'><img border=0 width=454 height=87 id="Picture 17"
-src="image003.png"></span></p>
+color:#2B3E51'>This can be seen from the equation of form:</span><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_16"
+ o:spid="_x0000_i1026" type="#_x0000_t75" style='width:332.25pt;height:60pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Naive%20Bayes_files/image002.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=443 height=80
+src="Naive%20Bayes_files/image002.png" v:shapes="Picture_x0020_16"><![endif]></span><span
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'><o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
+0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
+color:#2B3E51'>Or<o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
+0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
+color:#2B3E51;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_17"
+ o:spid="_x0000_i1025" type="#_x0000_t75" style='width:340.5pt;height:65.25pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Naive%20Bayes_files/image003.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=454 height=87
+src="Naive%20Bayes_files/image003.png" v:shapes="Picture_x0020_17"><![endif]></span><span
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'><o:p></o:p></span></p>
 
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
 0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
@@ -373,45 +1325,51 @@ we assume that every word in a sentence is&nbsp;</span><strong><span
 style='font-family:"Arial",sans-serif;color:#2B3E51'>independent</span></strong><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>&nbsp;of
 the other ones. This means that we’re no longer looking at entire sentences,
-but rather at individual words. We write this as:</span></p>
+but rather at individual words. We write this as:<o:p></o:p></span></p>
 
 <p align=center style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;
-margin-left:0cm;text-align:center;background:white'><span style='font-size:
-13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>P(I have red eyes and nose
-) = P(I) * P(have) * P(red) * P(eyes) * P(and) * P(nose)</span></p>
+margin-left:0cm;text-align:center;background:white'><span class=GramE><span
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>P(</span></span><span
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51;
+mso-bidi-font-style:italic'>I have red eyes and nose</span><span
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'> ) = P(I)
+* P(have) * P(red) * P(eyes) * P(and) * P(nose)<o:p></o:p></span></p>
 
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
 0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
 color:#2B3E51'>This assumption is very strong&nbsp;but very useful. It makes
 this model work well with little data. The next step is just applying this to
-what we had before:</span></p>
+what we had before:<o:p></o:p></span></p>
 
 <p align=center style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;
-margin-left:0cm;text-align:center;background:white'><span style='font-size:
-13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>P(I have red eyes and nose
-| Cough ) = P(I | Cough) * P(have | Cough) * P(red | Cough) * P(eyes | Cough) *
-P(and | Cough) * P(nose | Cough)</span></p>
+margin-left:0cm;text-align:center;background:white'><span class=GramE><span
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>P(</span></span><span
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51;
+mso-bidi-font-style:italic'>I have red eyes and nose | Cough</span><span
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'> ) = P(I |
+Cough) * P(have | Cough) * P(red | Cough) * P(eyes | Cough) * P(and | Cough) *
+P(nose | Cough)<o:p></o:p></span></p>
 
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
 0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>&nbsp;</span></p>
+color:#2B3E51'><o:p>&nbsp;</o:p></span></p>
 
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
 0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>And now, all of these individual words actually show up several
-times in our training set, and we can calculate them.</span></p>
+color:#2B3E51'>And now, <span class=GramE>all of these</span> individual words
+actually show up several times in our training set, and we can calculate them.<o:p></o:p></span></p>
 
 <h3 style='background:white'><span style='font-family:"Arial",sans-serif;
-color:#2B3E51'>Calculating probabilities</span></h3>
+color:#2B3E51'>Calculating probabilities<o:p></o:p></span></h3>
 
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
 0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
 color:#2B3E51'>The final step is just to calculate every probability and see
-which one turns out to be larger.</span></p>
+which one turns out to be larger.<o:p></o:p></span></p>
 
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
 0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>Calculating a probability is just counting in our training set.</span></p>
+color:#2B3E51'>Calculating a probability is just counting in our training set.<o:p></o:p></span></p>
 
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
 0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
@@ -420,676 +1378,144 @@ for a given sentence in our training set, the probability that it is&nbsp;</span
 style='font-family:"Arial",sans-serif;color:#2B3E51'>Cough</span></em><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>&nbsp;P(Sports)
 is </span><span style='font-size:13.5pt;font-family:"Cambria Math",serif;
-color:#2B3E51'>255/510</span><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>. Then, P(Conjunctivitis) is </span><span style='font-size:13.5pt;
-font-family:"Cambria Math",serif;color:#2B3E51'>255/510</span><span
+mso-bidi-font-family:"Cambria Math";color:#2B3E51'>255/510</span><span
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>. Then,
+P(Conjunctivitis) is </span><span style='font-size:13.5pt;font-family:"Cambria Math",serif;
+mso-bidi-font-family:"Cambria Math";color:#2B3E51'>255/510</span><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>. That’s
-easy to compute.</span></p>
+easy to compute.<o:p></o:p></span></p>
 
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
 0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>Then, calculating&nbsp;P(nose | Cough) means counting how many
-times the word “nose” appears in&nbsp;</span><em><span style='font-family:"Arial",sans-serif;
-color:#2B3E51'>Cough</span></em><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>&nbsp;samples (255) divided by the total number of words
-in&nbsp;</span><em><span style='font-family:"Arial",sans-serif;color:#2B3E51'>Cough</span></em><span
-style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>. </span></p>
-
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
-0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>However, we run into a problem here: “red” doesn’t appear in
-any&nbsp;<i>Cough</i>&nbsp;sample! That means that&nbsp;P(red | Cough) =
-0.&nbsp; This is rather not helping since we are going to be multiplying it
-with the other probabilities, so we’ll end up P(I have red eyes and nose |
-Cough )  = 0. Doing things this way will not give information at all.</span></p>
-
-<p style='margin:0cm;margin-bottom:.0001pt;background:white'><span
-style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>We solve
-it using </span><a href="https://en.wikipedia.org/wiki/Laplace_smoothing"
-target="_blank"><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#007BE2;text-decoration:none'>Laplace smoothing</span></a><span
-style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>: we add
-1 to every count so it’s never zero. To balance this, we add the number of
-possible words (total distinct words in both samples) to the divisor, so the
-division will never be greater than 1. </span></p>
-
-<p style='margin:0cm;margin-bottom:.0001pt;background:white'><span
-style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>&nbsp;</span></p>
-
-<p style='margin:0cm;margin-bottom:.0001pt;background:white'><span
-style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>Thus P(eyes
-| Cough ) = (frequency of eyes in Cough samples) + 1)/(total words in Cough
-samples + total distinct words in both sample)</span></p>
-
-<p style='margin:0cm;margin-bottom:.0001pt;background:white'><span
-style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'> = (91
-+1)/(3168 + 1827) = 0.0184</span></p>
-
-<p style='margin:0cm;margin-bottom:.0001pt;background:white'><span
-style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>&nbsp;</span></p>
-
-<p style='margin:0cm;margin-bottom:.0001pt;background:white'><span
-style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>Doing in
-this we get:</span></p>
-
-<p style='margin:0cm;margin-bottom:.0001pt;background:white'><span
-style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>&nbsp;</span></p>
-
-<p style='margin:0cm;margin-bottom:.0001pt;background:white'><span
-style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>P(I have
-red eyes and nose | Cough ) = </span><b><span style='font-family:"Arial",sans-serif;
-color:#0066FF'>7.77280828952263E-17</span></b></p>
-
-<p style='margin:0cm;margin-bottom:.0001pt;background:white'><b><span
-style='font-family:"Arial",sans-serif;color:#0066FF'>&nbsp;</span></b></p>
-
-<p style='margin:0cm;margin-bottom:.0001pt;background:white'><span
-style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>P(I have
-red eyes and nose | Conjunctivitis ) = </span><b><span style='font-family:"Arial",sans-serif;
-color:#0066FF'>4.57427484108468E-14</span></b></p>
-
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
-0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>&nbsp;</span></p>
-
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
-0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>Hence our classifier gives <span style='background:white'>“</span>I
-have red eyes and nose<span style='background:white'>” the&nbsp;<strong><span
-style='font-family:"Arial",sans-serif'>Conjunctivitis</span></strong>&nbsp;category.</span></span></p>
-
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
-0cm;background:white'><b><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51;background:white'>References</span></b></p>
-
-<p style='margin-left:18.0pt;background:white'><span style='font-size:13.5pt;
-font-family:"Arial",sans-serif;color:#2B3E51'>[1] A Bayesian Classification
-Approach Using Class-Specific Features for Text Categorization, Bo Tang,
-Student Member, IEEE, Haibo He, Senior Member, IEEE, Paul M. Baggenstoss,
-Senior Member, IEEE, and Steven Kay, Fellow, IEEE, IEEE TRANSACTIONS ON
-KNOWLEDGE AND DATA ENGINEERING, VOL. 28, NO. 6, JUNE 2016.</span></p>
-
-<p style='margin-left:18.0pt;background:white'><span style='font-size:13.5pt;
-font-family:"Arial",sans-serif;color:#2B3E51'>[2] Halftone Image Classification
-Using LMS Algorithm and Naive Bayes, Yun-Fu Liu, Student Member, IEEE,
-Jing-Ming Guo, Senior Member, IEEE, and Jiann-Der Lee, Member, IEEE, IEEE
-TRANSACTIONS ON IMAGE PROCESSING, VOL. 20, NO. 10, OCTOBER 2011.</span></p>
-
-<p style='margin-left:18.0pt;background:white'><span style='font-size:13.5pt;
-font-family:"Arial",sans-serif;color:#2B3E51'>[3] Internet Traffic
-Classification by Aggregating Correlated Naive Bayes Predictions, Jun Zhang,
-Member, IEEE, Chao Chen, Yang Xiang, Senior Member, IEEE, Wanlei Zhou, Senior
-Member, IEEE, and Yong Xiang, Senior Member, IEEE, IEEE TRANSACTIONS ON
-INFORMATION FORENSICS AND SECURITY, VOL. 8, NO. 1, JANUARY 2013.</span></p>
-
-<p style='margin-left:18.0pt;background:white'><span style='font-size:13.5pt;
-font-family:"Arial",sans-serif;color:#2B3E51'>[4] Some Effective Techniques for
-Naive Bayes Text Classification, Sang-Bum Kim, Kyoung-Soo Han, Hae-Chang Rim,
-and Sung Hyon Myaeng, IEEE TRANSACTIONS ON KNOWLEDGE AND DATA ENGINEERING, VOL.
-18, NO. 11, NOVEMBER 2006</span></p>
-
-<p style='margin-left:18.0pt;background:white'><span style='font-size:13.5pt;
-font-family:"Arial",sans-serif;color:#2B3E51'>[5] Toward Optimal Feature
-Selection in Naive Bayes for Text Categorization, Bo Tang, Student Member,
-IEEE, Steven Kay, Fellow, IEEE, and Haibo He, IEEE TRANSACTIONS ON KNOWLEDGE
-AND DATA ENGINEERING, VOL. 28, NO. 9, SEPTEMBER 2016</span></p>
-
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
-0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>&nbsp;</span></p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-</div>
-
-</body>
-
-</html>
-=======
-<html>
-
-<head>
-<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:8.0pt;
-	margin-left:0cm;
-	line-height:107%;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-h3
-	{mso-style-link:"Heading 3 Char";
-	margin-right:0cm;
-	margin-left:0cm;
-	font-size:13.5pt;
-	font-family:"Times New Roman",serif;
-	font-weight:bold;}
-a:link, span.MsoHyperlink
-	{color:blue;
-	text-decoration:underline;}
-a:visited, span.MsoHyperlinkFollowed
-	{color:#954F72;
-	text-decoration:underline;}
-p
-	{margin-right:0cm;
-	margin-left:0cm;
-	font-size:12.0pt;
-	font-family:"Times New Roman",serif;}
-span.Heading3Char
-	{mso-style-name:"Heading 3 Char";
-	mso-style-link:"Heading 3";
-	font-family:"Times New Roman",serif;
-	font-weight:bold;}
-p.ql-center-displayed-equation, li.ql-center-displayed-equation, div.ql-center-displayed-equation
-	{mso-style-name:ql-center-displayed-equation;
-	margin-right:0cm;
-	margin-left:0cm;
-	font-size:12.0pt;
-	font-family:"Times New Roman",serif;}
-span.ql-right-eqno
-	{mso-style-name:ql-right-eqno;}
-span.ql-left-eqno
-	{mso-style-name:ql-left-eqno;}
-span.crayon-sy
-	{mso-style-name:crayon-sy;}
-span.crayon-s
-	{mso-style-name:crayon-s;}
-span.crayon-h
-	{mso-style-name:crayon-h;}
-.MsoChpDefault
-	{font-family:"Calibri",sans-serif;}
-.MsoPapDefault
-	{margin-bottom:8.0pt;
-	line-height:107%;}
-@page WordSection1
-	{size:595.3pt 841.9pt;
-	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
-div.WordSection1
-	{page:WordSection1;}
- /* List Definitions */
- ol
-	{margin-bottom:0cm;}
-ul
-	{margin-bottom:0cm;}
--->
-</style>
-
-</head>
-
-<body lang=EN-IN link=blue vlink="#954F72">
-
-<div class=WordSection1>
-
-<p class=MsoNormal align=center style='text-align:center'><a
-name="_Hlk497473051"></a><b><span style='font-size:13.5pt;line-height:107%;
-font-family:"Arial",sans-serif;color:#2B3E51;background:white'>Machine Learning
-Using Naïve Bayes Classification</span></b></p>
-
-<p class=MsoNormal><b><span style='font-size:13.5pt;line-height:107%;
-font-family:"Arial",sans-serif;color:#2B3E51;background:white'>Abstract:</span></b></p>
-
-<p class=MsoNormal><span style='font-size:13.5pt;line-height:107%;font-family:
-"Arial",sans-serif;color:#2B3E51;background:white'>It is very needful problem
-in current scenario to predict the text category of a new data from existing
-categories data. In this page we have tried to explore Bayesian probability
-approach to predict the class of new text.</span></p>
-
-<p class=MsoNormal><span style='font-size:13.5pt;line-height:107%;font-family:
-"Arial",sans-serif;color:#2B3E51;background:white'>It uses the probability that
-new text belongs to which category with a numeric score. The maximum score will
-tell which category the new query text belongs to. This process is easy and
-works to good accuracy.</span></p>
-
-<p class=MsoNormal><span style='font-size:13.5pt;line-height:107%;font-family:
-"Arial",sans-serif;color:#2B3E51;background:white'>&nbsp;</span></p>
-
-<p class=MsoNormal><b><span style='font-size:13.5pt;line-height:107%;
-font-family:"Arial",sans-serif;color:#2B3E51;background:white'>Introduction:</span></b></p>
-
-<p class=MsoNormal><span style='font-size:13.5pt;line-height:107%;font-family:
-"Arial",sans-serif;color:#2B3E51;background:white'>&nbsp;</span></p>
-
-<p class=MsoNormal><b><span style='font-size:13.5pt;line-height:107%;
-font-family:"Arial",sans-serif;color:#2B3E51;background:white'>Naive Bayes</span></b><span
-style='font-size:13.5pt;line-height:107%;font-family:"Arial",sans-serif;
-color:#2B3E51;background:white'> are also known as&nbsp;<b>Naive Bayes
-Classifiers.</b>&nbsp;It works with the assumption that features are&nbsp;</span><a
-href="https://brilliant.org/wiki/statistical-independence/?wiki_title=statistically%20independent"
-target="_blank" title="page not yet created"><span style='font-size:13.5pt;
-line-height:107%;font-family:"Arial",sans-serif;color:#2B3E51;background:white;
-text-decoration:none'>statistically independent</span></a><span
-style='font-size:13.5pt;line-height:107%;font-family:"Arial",sans-serif;
-color:#2B3E51;background:white'>&nbsp;of one another. Unlike many other
-classifiers which assume that, for a given class, there will be some&nbsp;</span><a
-href="https://brilliant.org/wiki/correlation/" target="_blank"
-title=correlation><span style='font-size:13.5pt;line-height:107%;font-family:
-"Arial",sans-serif;color:#2B3E51;background:white;text-decoration:none'>correlation</span></a><span
-style='font-size:13.5pt;line-height:107%;font-family:"Arial",sans-serif;
-color:#2B3E51;background:white'>&nbsp;between features, naive Bayes explicitly assumes
-the features as&nbsp;</span><a
-href="https://brilliant.org/wiki/conditional-independence/?wiki_title=conditionally%20independent"
-target="_blank" title="page not yet created"><span style='font-size:13.5pt;
-line-height:107%;font-family:"Arial",sans-serif;color:#2B3E51;background:white;
-text-decoration:none'>conditionally independent</span></a><span
-style='font-size:13.5pt;line-height:107%;font-family:"Arial",sans-serif;
-color:#2B3E51;background:white'>&nbsp;given the class. While this seems an
-overly simplistic (naive) restriction on the data, in practice naive Bayes is
-competitive with more sophisticated techniques and enjoys some theoretical
-support for its presumption.</span></p>
-
-<p class=MsoNormal><span style='font-size:13.5pt;line-height:107%;font-family:
-"Arial",sans-serif;color:#2B3E51;background:white'>Because of the independence
-assumption, naive Bayes classifiers are highly scalable and can quickly learn
-to use high dimensional features with limited training data. This is useful for
-many real world datasets where the amount of data may be small in comparison
-with the number of features for each individual piece of data, such as speech, text,
-and image data. Examples of modern applications include recommendation system, spam
-filtering, automatic medical diagnoses, medical image processing, and vocal
-emotion recognition.</span></p>
-
-<p class=MsoNormal><span style='font-size:13.5pt;line-height:107%;font-family:
-"Arial",sans-serif;color:#2B3E51;background:white'>&nbsp;</span></p>
-
-<p class=MsoNormal><b><span style='font-size:13.5pt;line-height:107%;
-font-family:"Arial",sans-serif;color:#2B3E51;background:white'>Example with
-Naïve Bayes</span></b></p>
-
-<p class=MsoNormal><span style='font-size:13.5pt;line-height:107%;font-family:
-"Arial",sans-serif;color:#2B3E51;background:white'>Suppose we are building a
-classifier that checks from symptoms text whether disease is cough or
-conjunctivitis. Our training set has 255 sentences for cough and 255 for
-conjunctivitis, some examples are listed below:</span></p>
-
-<p class=MsoNormal><span style='font-size:13.5pt;line-height:107%;font-family:
-"Arial",sans-serif;color:#2B3E51;background:white'>&nbsp;</span></p>
-
-<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=616
- style='width:462.0pt;background:white;border-collapse:collapse;border:none'>
- <tr style='height:11.25pt'>
-  <td width=393 style='width:294.75pt;border:solid windowtext 1.0pt;padding:
-  .75pt .75pt .75pt .75pt;height:11.25pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-  color:#2B3E51'>Text</span></b></p>
-  </td>
-  <td width=207 style='width:155.25pt;border:solid windowtext 1.0pt;border-left:
-  none;padding:.75pt .75pt .75pt .75pt;height:11.25pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-  color:#2B3E51'>Disease</span></b></p>
-  </td>
- </tr>
- <tr style='height:42.0pt'>
-  <td width=393 style='width:294.75pt;border:solid windowtext 1.0pt;border-top:
-  none;padding:.75pt .75pt .75pt .75pt;height:42.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-  color:#2B3E51'>Watery eyes and itchy nose</span></p>
-  </td>
-  <td width=207 style='width:155.25pt;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:.75pt .75pt .75pt .75pt;height:42.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-  color:#2B3E51'>Conjunctivitis</span></p>
-  </td>
- </tr>
- <tr style='height:42.0pt'>
-  <td width=393 style='width:294.75pt;border:solid windowtext 1.0pt;border-top:
-  none;padding:.75pt .75pt .75pt .75pt;height:42.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-  color:#2B3E51'>and the sneezing and coughing begin</span></p>
-  </td>
-  <td width=207 style='width:155.25pt;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:.75pt .75pt .75pt .75pt;height:42.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-  color:#2B3E51'>Cough</span></p>
-  </td>
- </tr>
- <tr style='height:42.0pt'>
-  <td width=393 style='width:294.75pt;border:solid windowtext 1.0pt;border-top:
-  none;padding:.75pt .75pt .75pt .75pt;height:42.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-  color:#2B3E51'>my eyes are like forever itchy what should i do</span></p>
-  </td>
-  <td width=207 style='width:155.25pt;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:.75pt .75pt .75pt .75pt;height:42.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-  color:#2B3E51'>Conjunctivitis</span></p>
-  </td>
- </tr>
- <tr style='height:42.0pt'>
-  <td width=393 style='width:294.75pt;border:solid windowtext 1.0pt;border-top:
-  none;padding:.75pt .75pt .75pt .75pt;height:42.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-  color:#2B3E51'>When you start coughing and then you</span></p>
-  </td>
-  <td width=207 style='width:155.25pt;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:.75pt .75pt .75pt .75pt;height:42.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-  color:#2B3E51'>Cough</span></p>
-  </td>
- </tr>
- <tr style='height:42.0pt'>
-  <td width=393 style='width:294.75pt;border:solid windowtext 1.0pt;border-top:
-  none;padding:.75pt .75pt .75pt .75pt;height:42.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-  color:#2B3E51'>my eyes so watery</span></p>
-  </td>
-  <td width=207 style='width:155.25pt;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:.75pt .75pt .75pt .75pt;height:42.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-  color:#2B3E51'>Conjunctivitis</span></p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
-0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>Now, which category does the symptom&nbsp;“<i>I have red eyes
-and nose”</i>&nbsp;belong to?</span></p>
-
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
-0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>Since Naive Bayes is a probabilistic classifier, we want to
-calculate the probability that the symptom&nbsp;“<i>I have red eyes and nose”</i>
-is Cough, and the probability that it’s&nbsp;<em><span style='font-family:"Arial",sans-serif'>Conjunctivitis</span></em>.
-Then, we take the largest one. Written mathematically, what we want
-is&nbsp;P(Cough | I have red eyes and nose ) — the probability that the
-category of a disease symptom is&nbsp;Cough&nbsp;given that the sentence is “I
-have red eyes and nose”.</span></p>
-
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
-0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>To get the probability we need to convert text to numeric
-values. For this we can use word frequencies and count of distinct words and
-total words and use them to compute probabilities.</span></p>
-
-<p class=MsoNormal style='line-height:normal;background:white'><b><span
-style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>Bayes’
-Theorem</span></b></p>
-
-<p class=MsoNormal style='margin-bottom:15.0pt;line-height:normal;background:
-white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>Now
-we need to transform the probability we want to calculate into something that
-can be calculated using word frequencies. </span></p>
-
-<p class=MsoNormal style='margin-bottom:15.0pt;line-height:normal;background:
-white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>Bayes’
-Theorem is useful when working with conditional probabilities (like we are
-doing here), because it provides us with a way to reverse them:</span></p>
-
-<p class=MsoNormal style='margin-bottom:15.0pt;line-height:33.0pt;background:
-white'><span style='font-size:15.0pt;font-family:"Arial",sans-serif;color:#2B3E51'>&nbsp;&nbsp;</span>
-<img border=0 width=269 height=70 id="Picture 1"
-src="Naive%20Bayes_files/image001.png"></p>
-
-<p class=MsoNormal style='margin-bottom:15.0pt;line-height:normal;background:
-white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>In
-our case, we have&nbsp;</span><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>P(Cough | I have red eyes and nose )</span><span
-style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>, so
-using this theorem we can reverse the conditional probability:</span></p>
-
-<p class=MsoNormal style='margin-bottom:15.0pt;line-height:normal;background:
-white'><span style='font-size:15.0pt;font-family:"Arial",sans-serif;color:#2B3E51'>&nbsp;&nbsp;</span><span
-style='font-size:10.0pt;font-family:"Arial",sans-serif;color:#0070C0'>P(Cough |
-I have red eyes and nose ) = P(I have red eyes and nose | Cough ) * P(Cough)/
-P(I have red eyes and nose )</span></p>
-
-<p class=MsoNormal style='margin-bottom:15.0pt;line-height:normal;background:
-white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>Since
-for our classifier we’re just trying to find out which category has a bigger
-probability, we can discard the divisor&nbsp;—which is the same for both diseases
-- and just compare</span></p>
-
-<p class=MsoNormal align=center style='margin-bottom:15.0pt;text-align:center;
-line-height:normal;background:white'><span style='font-size:10.0pt;font-family:
-"Arial",sans-serif;color:#0070C0'>P(I have red eyes and nose | Cough ) *
-P(Cough)</span></p>
-
-<p class=MsoNormal align=center style='margin-bottom:15.0pt;text-align:center;
-line-height:normal;background:white'><span style='font-size:13.5pt;font-family:
-"Arial",sans-serif;color:#2B3E51'>with</span></p>
-
-<p class=MsoNormal align=center style='margin-bottom:15.0pt;text-align:center;
-line-height:normal;background:white'><span style='font-size:10.0pt;font-family:
-"Arial",sans-serif;color:#0070C0'>P(I have red eyes and nose | Conjunctivitis )
-* P(Conjunctivitis)</span></p>
-
-<p class=MsoNormal style='margin-bottom:15.0pt;line-height:normal;background:
-white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>This
-is better, since we could actually calculate these probabilities.</span></p>
-
-<p class=MsoNormal style='margin-bottom:15.0pt;line-height:normal;background:
-white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>There’s
-a problem though: “</span><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>I have red eyes and nose</span><span style='font-size:13.5pt;
-font-family:"Arial",sans-serif;color:#2B3E51'>” doesn’t appear in our training
-set, so this probability is zero. Unless every sentence that we want to
-classify appears in our training set, the model won’t be very useful.</span></p>
-
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
-0cm;background:white'><b><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>Naïve Bayes Theorem</span></b></p>
-
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
-0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>This can be seen from the equation of form:</span><img border=0
-width=443 height=80 id="Picture 16" src="Naive%20Bayes_files/image002.png"></p>
-
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
-0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>Or</span></p>
-
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
-0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'><img border=0 width=454 height=87 id="Picture 17"
-src="Naive%20Bayes_files/image003.png"></span></p>
-
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
-0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>So here comes the&nbsp;<em><span style='font-family:"Arial",sans-serif'>Naive</span></em>&nbsp;part:
-we assume that every word in a sentence is&nbsp;</span><strong><span
-style='font-family:"Arial",sans-serif;color:#2B3E51'>independent</span></strong><span
-style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>&nbsp;of
-the other ones. This means that we’re no longer looking at entire sentences,
-but rather at individual words. We write this as:</span></p>
-
-<p align=center style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;
-margin-left:0cm;text-align:center;background:white'><span style='font-size:
-13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>P(I have red eyes and nose
-) = P(I) * P(have) * P(red) * P(eyes) * P(and) * P(nose)</span></p>
-
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
-0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>This assumption is very strong&nbsp;but very useful. It makes
-this model work well with little data. The next step is just applying this to
-what we had before:</span></p>
-
-<p align=center style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;
-margin-left:0cm;text-align:center;background:white'><span style='font-size:
-13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>P(I have red eyes and nose
-| Cough ) = P(I | Cough) * P(have | Cough) * P(red | Cough) * P(eyes | Cough) *
-P(and | Cough) * P(nose | Cough)</span></p>
-
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
-0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>&nbsp;</span></p>
-
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
-0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>And now, all of these individual words actually show up several
-times in our training set, and we can calculate them.</span></p>
-
-<h3 style='background:white'><span style='font-family:"Arial",sans-serif;
-color:#2B3E51'>Calculating probabilities</span></h3>
-
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
-0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>The final step is just to calculate every probability and see
-which one turns out to be larger.</span></p>
-
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
-0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>Calculating a probability is just counting in our training set.</span></p>
-
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
-0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>First, we calculate the a priori probability of each category:
-for a given sentence in our training set, the probability that it is&nbsp;</span><em><span
+color:#2B3E51'>Then, calculating&nbsp;<span class=GramE>P(</span>nose | Cough)
+means counting how many times the word “nose” appears in&nbsp;</span><em><span
 style='font-family:"Arial",sans-serif;color:#2B3E51'>Cough</span></em><span
-style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>&nbsp;P(Sports)
-is </span><span style='font-size:13.5pt;font-family:"Cambria Math",serif;
-color:#2B3E51'>255/510</span><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>. Then, P(Conjunctivitis) is </span><span style='font-size:13.5pt;
-font-family:"Cambria Math",serif;color:#2B3E51'>255/510</span><span
-style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>. That’s
-easy to compute.</span></p>
-
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
-0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>Then, calculating&nbsp;P(nose | Cough) means counting how many
-times the word “nose” appears in&nbsp;</span><em><span style='font-family:"Arial",sans-serif;
-color:#2B3E51'>Cough</span></em><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>&nbsp;samples (255) divided by the total number of words
-in&nbsp;</span><em><span style='font-family:"Arial",sans-serif;color:#2B3E51'>Cough</span></em><span
-style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>. </span></p>
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>&nbsp;samples
+(255) divided by the total number of words in&nbsp;</span><em><span
+style='font-family:"Arial",sans-serif;color:#2B3E51'>Cough</span></em><span
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>. <o:p></o:p></span></p>
 
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
 0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
 color:#2B3E51'>However, we run into a problem here: “red” doesn’t appear in
-any&nbsp;<i>Cough</i>&nbsp;sample! That means that&nbsp;P(red | Cough) =
-0.&nbsp; This is rather not helping since we are going to be multiplying it
-with the other probabilities, so we’ll end up P(I have red eyes and nose |
-Cough )  = 0. Doing things this way will not give information at all.</span></p>
+any&nbsp;<i>Cough</i>&nbsp;sample! That means that&nbsp;<span class=GramE>P(</span>red
+| Cough) = 0.&nbsp; This is rather not helping since we are going to be
+multiplying it with the other probabilities, so we’ll end up <span class=GramE>P(</span><span
+style='mso-bidi-font-style:italic'>I have red eyes and nose | Cough</span>
+)<span style='mso-spacerun:yes'>  </span>= 0. Doing things this way will not
+give information at all.<o:p></o:p></span></p>
 
 <p style='margin:0cm;margin-bottom:.0001pt;background:white'><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>We solve
 it using </span><a href="https://en.wikipedia.org/wiki/Laplace_smoothing"
 target="_blank"><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#007BE2;text-decoration:none'>Laplace smoothing</span></a><span
+color:#007BE2;text-decoration:none;text-underline:none'>Laplace smoothing</span></a><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>: we add
 1 to every count so it’s never zero. To balance this, we add the number of
 possible words (total distinct words in both samples) to the divisor, so the
-division will never be greater than 1. </span></p>
+division will never be greater than 1. <o:p></o:p></span></p>
 
 <p style='margin:0cm;margin-bottom:.0001pt;background:white'><span
-style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>&nbsp;</span></p>
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'><o:p>&nbsp;</o:p></span></p>
 
 <p style='margin:0cm;margin-bottom:.0001pt;background:white'><span
-style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>Thus P(eyes
-| Cough ) = (frequency of eyes in Cough samples) + 1)/(total words in Cough
-samples + total distinct words in both sample)</span></p>
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>Thus P(<span
+style='mso-bidi-font-style:italic'>eyes | Cough</span> ) = (frequency of eyes
+in Cough samples) + 1)/(total words in Cough samples + total distinct words in
+both sample)<o:p></o:p></span></p>
 
 <p style='margin:0cm;margin-bottom:.0001pt;background:white'><span
-style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'> = (91
-+1)/(3168 + 1827) = 0.0184</span></p>
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'><span
+style='mso-spacerun:yes'> </span>= (91 +1)<span class=GramE>/(</span>3168 +
+1827) = 0.0184<o:p></o:p></span></p>
 
 <p style='margin:0cm;margin-bottom:.0001pt;background:white'><span
-style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>&nbsp;</span></p>
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'><o:p>&nbsp;</o:p></span></p>
 
 <p style='margin:0cm;margin-bottom:.0001pt;background:white'><span
 style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>Doing in
-this we get:</span></p>
+this we get:<o:p></o:p></span></p>
 
 <p style='margin:0cm;margin-bottom:.0001pt;background:white'><span
-style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>&nbsp;</span></p>
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'><o:p>&nbsp;</o:p></span></p>
 
-<p style='margin:0cm;margin-bottom:.0001pt;background:white'><span
-style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>P(I have
-red eyes and nose | Cough ) = </span><b><span style='font-family:"Arial",sans-serif;
-color:#0066FF'>7.77280828952263E-17</span></b></p>
+<p style='margin:0cm;margin-bottom:.0001pt;background:white'><span class=GramE><span
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>P(</span></span><span
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51;
+mso-bidi-font-style:italic'>I have red eyes and nose | Cough</span><span
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'> ) = </span><b><span
+style='font-family:"Arial",sans-serif;color:#0066FF'>7.77280828952263E-17<o:p></o:p></span></b></p>
 
 <p style='margin:0cm;margin-bottom:.0001pt;background:white'><b><span
-style='font-family:"Arial",sans-serif;color:#0066FF'>&nbsp;</span></b></p>
+style='font-family:"Arial",sans-serif;color:#0066FF'><o:p>&nbsp;</o:p></span></b></p>
 
-<p style='margin:0cm;margin-bottom:.0001pt;background:white'><span
-style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>P(I have
-red eyes and nose | Conjunctivitis ) = </span><b><span style='font-family:"Arial",sans-serif;
-color:#0066FF'>4.57427484108468E-14</span></b></p>
+<p style='margin:0cm;margin-bottom:.0001pt;background:white'><span class=GramE><span
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'>P(</span></span><span
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51;
+mso-bidi-font-style:italic'>I have red eyes and nose | Conjunctivitis</span><span
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'> ) = </span><b><span
+style='font-family:"Arial",sans-serif;color:#0066FF'>4.57427484108468E-14</span></b><span
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51'><o:p></o:p></span></p>
 
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
 0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>&nbsp;</span></p>
+color:#2B3E51'><o:p>&nbsp;</o:p></span></p>
 
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
 0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>Hence our classifier gives <span style='background:white'>“</span>I
-have red eyes and nose<span style='background:white'>” the&nbsp;<strong><span
-style='font-family:"Arial",sans-serif'>Conjunctivitis</span></strong>&nbsp;category.</span></span></p>
+color:#2B3E51'>Hence our classifier gives <span style='background:white'>“</span><span
+style='mso-bidi-font-style:italic'>I have red eyes and nose</span><span
+style='background:white'>” the&nbsp;<strong><span style='font-family:"Arial",sans-serif'>Conjunctivitis</span></strong>&nbsp;category.<o:p></o:p></span></span></p>
 
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
-0cm;background:white'><b><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51;background:white'>References</span></b></p>
+0cm;background:white'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:13.5pt;font-family:"Arial",sans-serif;color:#2B3E51;
+background:white'>References<o:p></o:p></span></b></p>
 
 <p style='margin-left:18.0pt;background:white'><span style='font-size:13.5pt;
 font-family:"Arial",sans-serif;color:#2B3E51'>[1] A Bayesian Classification
 Approach Using Class-Specific Features for Text Categorization, Bo Tang,
-Student Member, IEEE, Haibo He, Senior Member, IEEE, Paul M. Baggenstoss,
-Senior Member, IEEE, and Steven Kay, Fellow, IEEE, IEEE TRANSACTIONS ON
-KNOWLEDGE AND DATA ENGINEERING, VOL. 28, NO. 6, JUNE 2016.</span></p>
+Student Member, IEEE, <span class=SpellE>Haibo</span> He, Senior Member, IEEE,
+Paul M. <span class=SpellE>Baggenstoss</span>, Senior Member, IEEE, and Steven
+Kay, Fellow, IEEE, IEEE TRANSACTIONS ON KNOWLEDGE AND DATA ENGINEERING, VOL.
+28, NO. 6, JUNE 2016.<o:p></o:p></span></p>
 
 <p style='margin-left:18.0pt;background:white'><span style='font-size:13.5pt;
 font-family:"Arial",sans-serif;color:#2B3E51'>[2] Halftone Image Classification
 Using LMS Algorithm and Naive Bayes, Yun-Fu Liu, Student Member, IEEE,
-Jing-Ming Guo, Senior Member, IEEE, and Jiann-Der Lee, Member, IEEE, IEEE
-TRANSACTIONS ON IMAGE PROCESSING, VOL. 20, NO. 10, OCTOBER 2011.</span></p>
+Jing-Ming Guo, Senior Member, IEEE, and <span class=SpellE>Jiann</span>-Der
+Lee, Member, IEEE, IEEE TRANSACTIONS ON IMAGE PROCESSING, VOL. 20, NO. 10,
+OCTOBER 2011.<o:p></o:p></span></p>
 
 <p style='margin-left:18.0pt;background:white'><span style='font-size:13.5pt;
 font-family:"Arial",sans-serif;color:#2B3E51'>[3] Internet Traffic
 Classification by Aggregating Correlated Naive Bayes Predictions, Jun Zhang,
-Member, IEEE, Chao Chen, Yang Xiang, Senior Member, IEEE, Wanlei Zhou, Senior
-Member, IEEE, and Yong Xiang, Senior Member, IEEE, IEEE TRANSACTIONS ON
-INFORMATION FORENSICS AND SECURITY, VOL. 8, NO. 1, JANUARY 2013.</span></p>
+Member, IEEE, Chao Chen, Yang Xiang, Senior Member, IEEE, <span class=SpellE>Wanlei</span>
+Zhou, Senior Member, IEEE, and Yong Xiang, Senior Member, IEEE, IEEE
+TRANSACTIONS ON INFORMATION FORENSICS AND SECURITY, VOL. 8, NO. 1, JANUARY
+2013.<o:p></o:p></span></p>
 
 <p style='margin-left:18.0pt;background:white'><span style='font-size:13.5pt;
 font-family:"Arial",sans-serif;color:#2B3E51'>[4] Some Effective Techniques for
-Naive Bayes Text Classification, Sang-Bum Kim, Kyoung-Soo Han, Hae-Chang Rim,
-and Sung Hyon Myaeng, IEEE TRANSACTIONS ON KNOWLEDGE AND DATA ENGINEERING, VOL.
-18, NO. 11, NOVEMBER 2006</span></p>
+Naive Bayes Text Classification, Sang-Bum Kim, <span class=SpellE>Kyoung</span>-Soo
+Han, <span class=SpellE>Hae</span>-Chang Rim, and Sung Hyon <span class=SpellE>Myaeng</span>,
+IEEE TRANSACTIONS ON KNOWLEDGE AND DATA ENGINEERING, VOL. 18, NO. 11, NOVEMBER
+2006<o:p></o:p></span></p>
 
 <p style='margin-left:18.0pt;background:white'><span style='font-size:13.5pt;
 font-family:"Arial",sans-serif;color:#2B3E51'>[5] Toward Optimal Feature
 Selection in Naive Bayes for Text Categorization, Bo Tang, Student Member,
-IEEE, Steven Kay, Fellow, IEEE, and Haibo He, IEEE TRANSACTIONS ON KNOWLEDGE
-AND DATA ENGINEERING, VOL. 28, NO. 9, SEPTEMBER 2016</span></p>
+IEEE, Steven Kay, Fellow, IEEE, and <span class=SpellE>Haibo</span> He, IEEE
+TRANSACTIONS ON KNOWLEDGE AND DATA ENGINEERING, VOL. 28, NO. 9, SEPTEMBER 2016<o:p></o:p></span></p>
 
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
 0cm;background:white'><span style='font-size:13.5pt;font-family:"Arial",sans-serif;
-color:#2B3E51'>&nbsp;</span></p>
+color:#2B3E51'><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNormal>&nbsp;</p>
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
 </div>
 
 </body>
 
 </html>
->>>>>>> 7cb6b964af758037f0f94c8bd326190ce14d367b
